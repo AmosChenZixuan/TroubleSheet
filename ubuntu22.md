@@ -27,3 +27,12 @@ sudo visudo
 ```
 
 add ```Defaults        timestamp_timeout=300``` at the end
+
+
+# Auto mount drive on booting the machine
+
+```
+sudo vim /etc/fstab
+```
+
+add ```/dev/{drive_name}      /media/path/to/mount   ext4   defaults   0   0```
